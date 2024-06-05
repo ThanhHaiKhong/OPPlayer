@@ -34,6 +34,12 @@ let package = Package(
             path: "Sources/OPPlayerObjC",
             publicHeadersPath: "."
         ),
+        .target(
+            name: "OPPlayerUI",
+            dependencies: [
+                "OPPlayerObjC"
+            ]
+        ),
         .testTarget(
             name: "OPPlayerTests",
             dependencies: [
