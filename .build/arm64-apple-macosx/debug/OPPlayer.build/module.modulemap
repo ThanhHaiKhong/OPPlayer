@@ -1,0 +1,4 @@
+module OPPlayer {
+    header "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer-Swift.h"
+    requires objc
+}

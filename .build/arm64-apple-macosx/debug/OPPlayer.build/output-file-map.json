@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/master.swiftdeps"
+  },
+  "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayer/OPPlayer.swift": {
+    "dependencies": "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer.d",
+    "object": "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer.swift.o",
+    "swiftmodule": "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer.swiftdeps"
+  }
+}

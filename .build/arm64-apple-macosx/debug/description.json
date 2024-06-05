@@ -1,0 +1,698 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerPackageTests.xctest/Contents/MacOS/OPPlayerPackageTests",
+      "packagePath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer",
+      "productName" : "OPPlayerPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.OPPlayer-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/sources",
+      "importPath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayer/OPPlayer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/UIImageView+ZFCache.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/UIScrollView+ZFPlayer.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/UIView+ZFFrame.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/UIViewController+ZFPlayerRotation.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFAVPlayerManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFFloatView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFIJKPlayerManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFKVOController.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandScapeControlView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeRotationManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeRotationManager_iOS15.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeRotationManager_iOS16.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeViewController.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeViewController_iOS15.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeWindow.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLoadingView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFNetworkSpeedMonitor.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFOrientationObserver.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPersentInteractiveTransition.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerControlView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerController.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerGestureControl.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerLogManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerNotification.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerStatusBar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPortraitControlView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPortraitViewController.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPresentTransition.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFReachabilityManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFSliderView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFSmallFloatControlView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFSpeedLoadingView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFUtilities.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFVolumeBrightnessView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "OPPlayer",
+      "moduleOutputPath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.swiftmodule",
+      "objects" : [
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.15",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayerObjC/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayerObjC",
+        "-module-cache-path",
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "opplayer"
+      ],
+      "outputFileMapPath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayer/OPPlayer.swift"
+      ],
+      "tempsPath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.OPPlayerTests-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.build/sources",
+      "importPath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Tests/OPPlayerTests/OPPlayerTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "OPPlayerTests",
+      "moduleOutputPath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.swiftmodule",
+      "objects" : [
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.build/OPPlayerTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayerObjC/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayerObjC",
+        "-module-cache-path",
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "opplayer"
+      ],
+      "outputFileMapPath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.build/OPPlayerTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Tests/OPPlayerTests/OPPlayerTests.swift"
+      ],
+      "tempsPath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "OPPlayer" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "OPPlayer",
+      "-package-name",
+      "opplayer",
+      "-incremental",
+      "-c",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayer/OPPlayer.swift",
+      "-I",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug",
+      "-target",
+      "arm64-apple-macosx10.15",
+      "-swift-version",
+      "5",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayerObjC/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayerObjC",
+      "-module-cache-path",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer-Swift.h",
+      "-color-diagnostics",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "opplayer",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "OPPlayerTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "OPPlayerTests",
+      "-package-name",
+      "opplayer",
+      "-incremental",
+      "-c",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Tests/OPPlayerTests/OPPlayerTests.swift",
+      "-I",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-swift-version",
+      "5",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayerObjC/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayerObjC",
+      "-module-cache-path",
+      "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "opplayer",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "OPPlayer" : [
+      "OPPlayerObjC"
+    ],
+    "OPPlayerObjC" : [
+
+    ],
+    "OPPlayerTests" : [
+      "OPPlayer",
+      "OPPlayerObjC"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "writeCommands" : {
+    "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Sources/OPPlayer/OPPlayer.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/sources"
+    },
+    "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayer.build/OPPlayer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/UIImageView+ZFCache.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/UIScrollView+ZFPlayer.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/UIView+ZFFrame.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/UIViewController+ZFPlayerRotation.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFAVPlayerManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFFloatView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFIJKPlayerManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFKVOController.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandScapeControlView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeRotationManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeRotationManager_iOS15.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeRotationManager_iOS16.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeViewController.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeViewController_iOS15.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLandscapeWindow.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFLoadingView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFNetworkSpeedMonitor.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFOrientationObserver.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPersentInteractiveTransition.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerControlView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerController.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerGestureControl.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerLogManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerNotification.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerStatusBar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPlayerView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPortraitControlView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPortraitViewController.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFPresentTransition.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFReachabilityManager.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFSliderView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFSmallFloatControlView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFSpeedLoadingView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFUtilities.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerObjC.build/ZFVolumeBrightnessView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.build/OPPlayerTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/Tests/OPPlayerTests/OPPlayerTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/OPPlayerTests.build/sources"
+    },
+    "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/thanhhaikhong/Downloads/Packages/OPPlayer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

@@ -36,3 +36,5 @@ FOUNDATION_EXPORT const unsigned char ZFPlayerVersionString[];
 #import "UIScrollView+ZFPlayer.h"
 #import "ZFPlayerLogManager.h"
 #import "ZFPlayerConst.h"
+#import "ZFPlayerControlView.h"
+#import "ZFAVPlayerManager.h"
