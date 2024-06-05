@@ -2,7 +2,7 @@
 // https://docs.swift.org/swift-book
 
 import Foundation
-import OPPlayerObjC
+@_exported import OPPlayerObjC
 
 public class PlayerController: NSObject, ObservableObject {
     
