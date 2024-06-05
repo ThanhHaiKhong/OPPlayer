@@ -23,9 +23,6 @@ public class PlayerController: NSObject, ObservableObject {
     @Published public var isPlaying: Bool = false
     @Published public var isLoading: Bool = false
     
-    @Published public var currentTime: Double = .zero
-    @Published public var totalTime: Double = .zero
-    
     // MARK: - Public Properties
     
     public let player: ZFPlayerController
@@ -44,6 +41,7 @@ public class PlayerController: NSObject, ObservableObject {
         self.containerView = containerView
         self.controlView = controlView
         self.player = ZFPlayerController(playerManager: videoManager, containerView: containerView)
+        self.player.pauseWhenAppResignActive = false
         self.player.controlView = controlView
         
         super.init()
@@ -81,27 +79,6 @@ private extension PlayerController {
             default:
                 self.isLoading = true
             }
-        }
-        
-        player.playerPlayTimeChanged = { [weak self] (player, currentTime, totalTime) in
-            guard let `self` = self else { return }
-            
-            if self.totalTime != totalTime {
-                self.totalTime = totalTime
-            }
-            
-            self.currentTime = currentTime
-            /*
-            // Check if at least 1 second has passed since the last update
-            if currentTime - self.currentTime >= 1.0 {
-                self.currentTime = currentTime
-            }
-
-            // Check if currentTime equals duration
-            if currentTime == totalTime {
-                self.currentTime = totalTime
-            }
-            */
         }
     }
 }
