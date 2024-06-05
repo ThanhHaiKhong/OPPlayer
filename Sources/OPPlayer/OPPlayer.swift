@@ -23,8 +23,8 @@ public class PlayerController: NSObject, ObservableObject {
     @Published public var isPlaying: Bool = false
     @Published public var isLoading: Bool = false
     
-    @Published public var currentTime: TimeInterval = .zero
-    @Published public var totalTime: TimeInterval = .zero
+    @Published public var currentTime: Double = .zero
+    @Published public var totalTime: Double = .zero
     
     // MARK: - Public Properties
     
