@@ -86,8 +86,19 @@ private extension PlayerController {
         player.playerPlayTimeChanged = { [weak self] (player, currentTime, totalTime) in
             guard let `self` = self else { return }
             
-            self.currentTime = currentTime
-            self.totalTime = totalTime
+            if self.totalTime != totalTime {
+                self.totalTime = totalTime
+            }
+            
+            // Check if at least 1 second has passed since the last update
+            if currentTime - self.currentTime >= 1.0 {
+                self.currentTime = currentTime
+            }
+
+            // Check if currentTime equals duration
+            if currentTime == totalTime {
+                self.currentTime = totalTime
+            }
         }
     }
 }
