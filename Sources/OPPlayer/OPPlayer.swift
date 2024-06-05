@@ -90,6 +90,8 @@ private extension PlayerController {
                 self.totalTime = totalTime
             }
             
+            self.currentTime = currentTime
+            /*
             // Check if at least 1 second has passed since the last update
             if currentTime - self.currentTime >= 1.0 {
                 self.currentTime = currentTime
@@ -99,6 +101,7 @@ private extension PlayerController {
             if currentTime == totalTime {
                 self.currentTime = totalTime
             }
+            */
         }
     }
 }
