@@ -1,4 +1,4 @@
-module ZFPlayerObjC [system] {
+module OPPlayerObjC [system] {
     header "OPPlayerObjC.h"
     export *
 }
