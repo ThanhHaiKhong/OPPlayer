@@ -28,6 +28,7 @@
 #import "UIView+ZFFrame.h"
 #import "ZFReachabilityManager.h"
 #import "ZFUtilities.h"
+#import "UIFont+Extensions.h"
 
 @interface ZFPlayerTimerTarget: NSProxy
 @property (nonatomic, weak) id target;
@@ -294,7 +295,7 @@
         _dateLabel = [UILabel new];
         _dateLabel.bounds = CGRectMake(0, 0, 100, 16);
         _dateLabel.textColor = [UIColor whiteColor];
-        _dateLabel.font = [UIFont systemFontOfSize:12];
+        _dateLabel.font = [UIFont roundedFontWithSize:12 weight:UIFontWeightMedium];
         _dateLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _dateLabel;
@@ -322,7 +323,9 @@
         _batteryImageView = [[UIImageView alloc] init];
         _batteryImageView.bounds = CGRectMake(0, 0, 8, 12);
         _batteryImageView.center = CGPointMake(10, 5);
-        _batteryImageView.image = ZFPlayer_Image(@"ZFPlayer_battery_lightning");
+        _batteryImageView.contentMode = UIViewContentModeScaleAspectFit;
+        UIImage *image = [UIImage systemImageNamed:@"bolt.fill"];
+        _batteryImageView.image = image;
     }
     return _batteryImageView;
 }
@@ -369,7 +372,7 @@
     if (!_batteryLabel) {
         _batteryLabel = [[UILabel alloc] init];
         _batteryLabel.textColor = [UIColor whiteColor];
-        _batteryLabel.font = [UIFont systemFontOfSize:11];
+        _batteryLabel.font = [UIFont roundedFontWithSize:11 weight:UIFontWeightMedium];
         _batteryLabel.textAlignment = NSTextAlignmentRight;
     }
     return _batteryLabel;
@@ -382,7 +385,7 @@
         _networkLabel.layer.borderWidth = 1;
         _networkLabel.layer.borderColor = [UIColor lightGrayColor].CGColor;
         _networkLabel.textColor = [UIColor whiteColor];
-        _networkLabel.font = [UIFont systemFontOfSize:9];
+        _networkLabel.font = [UIFont roundedFontWithSize:9 weight:UIFontWeightMedium];
         _networkLabel.textAlignment = NSTextAlignmentCenter;
         _networkLabel.text = @"WIFI";
     }

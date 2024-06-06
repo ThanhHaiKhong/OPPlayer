@@ -10,9 +10,10 @@
 @implementation UIFont (Extensions)
 
 + (UIFont *)roundedFontWithSize:(CGFloat)size weight:(UIFontWeight)weight {
-    UIFontDescriptor *descriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle:UIFontTextStyleBody];
-    UIFontDescriptor *roundedDescriptor = [descriptor fontDescriptorByAddingAttributes:@{UIFontDescriptorFeatureSettingsAttribute: @[@{UIFontFeatureTypeIdentifierKey: @(kUpperCaseType), UIFontFeatureSelectorIdentifierKey: @(kUpperCaseSmallCapsSelector)}]}];
-    return [self fontWithDescriptor:roundedDescriptor size:size];
+    UIFont *systemFont = [UIFont systemFontOfSize:size weight:weight];
+
+    UIFontDescriptor *descriptor = [systemFont.fontDescriptor fontDescriptorWithDesign:UIFontDescriptorSystemDesignRounded];
+    return [UIFont fontWithDescriptor:descriptor size:size];
 }
 
 @end

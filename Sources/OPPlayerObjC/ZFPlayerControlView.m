@@ -36,6 +36,7 @@
 #else
 #import "ZFPlayerConst.h"
 #endif
+#import "UIFont+Extensions.h"
 
 
 @interface ZFPlayerControlView () <ZFSliderViewDelegate>
@@ -574,9 +575,11 @@
     self.fastView.hidden = NO;
     self.fastView.alpha = 1;
     if (forward) {
-        self.fastImageView.image = ZFPlayer_Image(@"ZFPlayer_fast_forward");
+        UIImage *image = [UIImage systemImageNamed:@"forward.fill"];
+        self.fastImageView.image = image;
     } else {
-        self.fastImageView.image = ZFPlayer_Image(@"ZFPlayer_fast_backward");
+        UIImage *image = [UIImage systemImageNamed:@"backward.fill"];
+        self.fastImageView.image = image;
     }
     NSString *draggedTime = [ZFUtilities convertTimeSecond:self.player.totalTime*value];
     NSString *totalTime = [ZFUtilities convertTimeSecond:self.player.totalTime];
@@ -750,6 +753,8 @@
 - (UIImageView *)fastImageView {
     if (!_fastImageView) {
         _fastImageView = [[UIImageView alloc] init];
+        _fastImageView.tintColor = UIColor.whiteColor;
+        _fastImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _fastImageView;
 }
@@ -759,7 +764,7 @@
         _fastTimeLabel = [[UILabel alloc] init];
         _fastTimeLabel.textColor = [UIColor whiteColor];
         _fastTimeLabel.textAlignment = NSTextAlignmentCenter;
-        _fastTimeLabel.font = [UIFont systemFontOfSize:14.0];
+        _fastTimeLabel.font = [UIFont roundedFontWithSize:14 weight:UIFontWeightMedium];
         _fastTimeLabel.adjustsFontSizeToFitWidth = YES;
     }
     return _fastTimeLabel;
@@ -770,7 +775,7 @@
         _fastProgressView = [[ZFSliderView alloc] init];
         _fastProgressView.maximumTrackTintColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.4];
         _fastProgressView.minimumTrackTintColor = [UIColor whiteColor];
-        _fastProgressView.sliderHeight = 2;
+        _fastProgressView.sliderHeight = 4;
         _fastProgressView.isHideSliderBlock = NO;
     }
     return _fastProgressView;
@@ -782,7 +787,7 @@
         [_failBtn setTitle:@"加载失败,点击重试" forState:UIControlStateNormal];
         [_failBtn addTarget:self action:@selector(failBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_failBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _failBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
+        _failBtn.titleLabel.font = [UIFont roundedFontWithSize:14 weight:UIFontWeightMedium];
         _failBtn.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
         _failBtn.hidden = YES;
     }

@@ -98,6 +98,7 @@ static const CGFloat kAnimate = 0.3;
     min_y = 0;
     min_h = self.sliderHeight;
     self.bgProgressView.frame = CGRectMake(min_x, min_y, min_w, min_h);
+    self.bgProgressView.layer.cornerRadius = self.sliderHeight / 2;
     
     min_x = 0;
     min_y = 0;
@@ -115,12 +116,14 @@ static const CGFloat kAnimate = 0.3;
     }
     min_h = self.sliderHeight;
     self.sliderProgressView.frame = CGRectMake(min_x, min_y, min_w, min_h);
+    self.sliderProgressView.layer.cornerRadius = self.sliderHeight / 2;
     
     min_x = 0;
     min_y = 0;
     min_w = self.bgProgressView.zf_width * self.bufferValue;
     min_h = self.sliderHeight;
     self.bufferProgressView.frame = CGRectMake(min_x, min_y, min_w, min_h);
+    self.bufferProgressView.layer.cornerRadius = self.sliderHeight / 2;
     
     min_w = 0.1;
     min_h = self.sliderHeight;

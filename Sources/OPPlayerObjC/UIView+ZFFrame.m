@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 
 #import "UIView+ZFFrame.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation UIView (ZFFrame)
 
@@ -144,6 +145,40 @@
     CGRect newFrame = self.frame;
     newFrame.size   = zf_size;
     self.frame      = newFrame;
+}
+
+- (void)setGradientBackgroundWithColors:(NSArray<UIColor *> *)colors {
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    
+    // Convert UIColor array to CGColor array
+    NSMutableArray *cgColors = [NSMutableArray array];
+    for (UIColor *color in colors) {
+        [cgColors addObject:(id)color.CGColor];
+    }
+    
+    // Set the colors to the gradient layer
+    gradientLayer.colors = cgColors;
+    
+    // Optionally set the locations of the colors if you want specific gradient stops
+    // Uncomment and modify the following line if you want custom locations
+    // gradientLayer.locations = @[@0.0, @0.5, @1.0]; // Example with three colors
+    
+    // Set the frame to match the view's bounds
+    gradientLayer.frame = self.bounds;
+    
+    // Optionally set the start and end points for the gradient direction
+    gradientLayer.startPoint = CGPointMake(0.0, 0.5); // Start from the left center
+    gradientLayer.endPoint = CGPointMake(1.0, 0.5); // End at the right center
+    
+    // Remove any existing gradient layers
+    for (CALayer *layer in self.layer.sublayers) {
+        if ([layer isKindOfClass:[CAGradientLayer class]]) {
+            [layer removeFromSuperlayer];
+        }
+    }
+    
+    // Add the gradient layer to the view
+    [self.layer insertSublayer:gradientLayer atIndex:0];
 }
 
 @end

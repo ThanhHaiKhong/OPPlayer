@@ -8,6 +8,7 @@
 #import "ZFSpeedLoadingView.h"
 #import "ZFNetworkSpeedMonitor.h"
 #import "UIView+ZFFrame.h"
+#import "UIFont+Extensions.h"
 
 @interface ZFSpeedLoadingView ()
 
@@ -91,7 +92,7 @@
     if (!_speedTextLabel) {
         _speedTextLabel = [UILabel new];
         _speedTextLabel.textColor = [UIColor whiteColor];
-        _speedTextLabel.font = [UIFont systemFontOfSize:12.0];
+        _speedTextLabel.font = [UIFont roundedFontWithSize:12 weight:UIFontWeightMedium];
         _speedTextLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _speedTextLabel;
@@ -107,7 +108,7 @@
 - (ZFLoadingView *)loadingView {
     if (!_loadingView) {
         _loadingView = [[ZFLoadingView alloc] init];
-        _loadingView.lineWidth = 0.8;
+        _loadingView.lineWidth = 1;
         _loadingView.duration = 1;
         _loadingView.hidesWhenStopped = YES;
     }

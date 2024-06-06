@@ -42,4 +42,6 @@
 @property (nonatomic) CGPoint zf_origin;
 @property (nonatomic) CGSize  zf_size;
 
+- (void)setGradientBackgroundWithColors:(NSArray<UIColor *> *)colors;
+
 @end

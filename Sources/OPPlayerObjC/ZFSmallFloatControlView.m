@@ -63,7 +63,9 @@
 - (UIButton *)closeBtn {
     if (!_closeBtn) {
         _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_closeBtn setImage:ZFPlayer_Image(@"ZFPlayer_close") forState:UIControlStateNormal];
+        _closeBtn.tintColor = UIColor.whiteColor;
+        UIImage *image = [UIImage systemImageNamed:@"xmark.app.fill"];
+        [_closeBtn setImage:image forState:UIControlStateNormal];
         [_closeBtn addTarget:self action:@selector(closeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _closeBtn;

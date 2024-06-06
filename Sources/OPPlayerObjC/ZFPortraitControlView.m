@@ -41,7 +41,7 @@
 @property (nonatomic, strong) UILabel *titleLabel;
 /// 播放或暂停按钮
 @property (nonatomic, strong) UIButton *playOrPauseBtn;
-/// 播放的当前时间 
+/// 播放的当前时间
 @property (nonatomic, strong) UILabel *currentTimeLabel;
 /// 滑杆
 @property (nonatomic, strong) ZFSliderView *slider;
@@ -116,7 +116,7 @@
     min_x = min_margin;
     min_w = 62;
     min_h = 28;
-    min_y = (self.bottomToolView.zf_height - min_h)/2;
+    min_y = (self.bottomToolView.zf_height - min_h) / 2;
     self.currentTimeLabel.frame = CGRectMake(min_x, min_y, min_w, min_h);
     
     min_w = 28;
@@ -220,7 +220,7 @@
     self.currentTimeLabel.text = currentTimeString;
 }
 
-#pragma mark - public method 
+#pragma mark - public method
 
 /** 重置ControlView */
 - (void)resetControlView {
@@ -321,7 +321,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.textColor = [UIColor whiteColor];
-        _titleLabel.font = [UIFont systemFontOfSize:15.0];
+        _titleLabel.font = [UIFont roundedFontWithSize:15.0f weight:UIFontWeightMedium];
     }
     return _titleLabel;
 }
@@ -338,8 +338,15 @@
 - (UIButton *)playOrPauseBtn {
     if (!_playOrPauseBtn) {
         _playOrPauseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_playOrPauseBtn setImage:ZFPlayer_Image(@"new_allPlay_44x44_") forState:UIControlStateNormal];
-        [_playOrPauseBtn setImage:ZFPlayer_Image(@"new_allPause_44x44_") forState:UIControlStateSelected];
+        
+        UIImageSymbolConfiguration *config = [UIImageSymbolConfiguration configurationWithPointSize:44 weight:UIImageSymbolWeightRegular];
+        UIImage *playImage = [UIImage systemImageNamed:@"play.circle.fill" withConfiguration:config];
+        UIImage *pauseImage = [UIImage systemImageNamed:@"pause.circle.fill" withConfiguration:config];
+        
+        [_playOrPauseBtn setImage:playImage forState:UIControlStateNormal];
+        [_playOrPauseBtn setImage:pauseImage forState:UIControlStateSelected];
+        
+        _playOrPauseBtn.tintColor = [UIColor whiteColor];
     }
     return _playOrPauseBtn;
 }
@@ -348,7 +355,7 @@
     if (!_currentTimeLabel) {
         _currentTimeLabel = [[UILabel alloc] init];
         _currentTimeLabel.textColor = [UIColor whiteColor];
-        _currentTimeLabel.font = [UIFont systemFontOfSize:14.0f];
+        _currentTimeLabel.font = [UIFont roundedFontWithSize:12.0f weight:UIFontWeightMedium];
         _currentTimeLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _currentTimeLabel;
@@ -361,8 +368,12 @@
         _slider.maximumTrackTintColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.8];
         _slider.bufferTrackTintColor  = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
         _slider.minimumTrackTintColor = [UIColor whiteColor];
-        [_slider setThumbImage:ZFPlayer_Image(@"ZFPlayer_slider") forState:UIControlStateNormal];
-        _slider.sliderHeight = 2;
+        /*
+         UIImage *normalImage = [UIImage systemImageNamed:@"circle.fill"];
+         [_slider setThumbImage:normalImage forState:UIControlStateNormal];
+         */
+        _slider.thumbSize = CGSizeMake(15, 15);
+        _slider.sliderHeight = 6;
     }
     return _slider;
 }
@@ -371,7 +382,7 @@
     if (!_totalTimeLabel) {
         _totalTimeLabel = [[UILabel alloc] init];
         _totalTimeLabel.textColor = [UIColor whiteColor];
-        _totalTimeLabel.font = [UIFont roundedFontWithSize:15.0f weight:UIFontWeightSemibold];
+        _totalTimeLabel.font = [UIFont roundedFontWithSize:12.0f weight:UIFontWeightMedium];
         _totalTimeLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _totalTimeLabel;
@@ -380,8 +391,7 @@
 - (UIButton *)fullScreenBtn {
     if (!_fullScreenBtn) {
         _fullScreenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImageSymbolConfiguration *config = [UIImageSymbolConfiguration configurationWithPointSize:24 weight:UIImageSymbolWeightRegular];
-        UIImage *normalImage = [UIImage systemImageNamed:@"arrow.down.left.and.arrow.up.right"];
+        UIImage *normalImage = [UIImage systemImageNamed:@"arrow.up.backward.and.arrow.down.forward"];
         [_fullScreenBtn setImage:normalImage forState:UIControlStateNormal];
         [_fullScreenBtn setTintColor:UIColor.whiteColor];
     }

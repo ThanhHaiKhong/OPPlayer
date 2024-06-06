@@ -106,17 +106,22 @@
     UIImage *playerImage = nil;
     if (volumeBrightnessType == ZFVolumeBrightnessTypeVolume) {
         if (progress == 0) {
-            playerImage = ZFPlayer_Image(@"ZFPlayer_muted");
+            UIImage *image = [UIImage systemImageNamed:@"speaker.slash.fill"];
+            playerImage = image;
         } else if (progress > 0 && progress < 0.5) {
-            playerImage = ZFPlayer_Image(@"ZFPlayer_volume_low");
+            UIImage *image = [UIImage systemImageNamed:@"speaker.wave.1.fill"];
+            playerImage = image;
         } else {
-            playerImage = ZFPlayer_Image(@"ZFPlayer_volume_high");
+            UIImage *image = [UIImage systemImageNamed:@"speaker.wave.2.fill"];
+            playerImage = image;
         }
     } else if (volumeBrightnessType == ZFVolumeBrightnessTypeumeBrightness) {
         if (progress >= 0 && progress < 0.5) {
-            playerImage = ZFPlayer_Image(@"ZFPlayer_brightness_low");
+            UIImage *image = [UIImage systemImageNamed:@"sun.min.fill"];
+            playerImage = image;
         } else {
-            playerImage = ZFPlayer_Image(@"ZFPlayer_brightness_high");
+            UIImage *image = [UIImage systemImageNamed:@"sun.max.fill"];
+            playerImage = image;
         }
     }
     self.iconImageView.image = playerImage;
@@ -129,9 +134,11 @@
 - (void)setVolumeBrightnessType:(ZFVolumeBrightnessType)volumeBrightnessType {
     _volumeBrightnessType = volumeBrightnessType;
     if (volumeBrightnessType == ZFVolumeBrightnessTypeVolume) {
-        self.iconImageView.image = ZFPlayer_Image(@"ZFPlayer_volume");
+        UIImage *image = [UIImage systemImageNamed:@"speaker.wave.2.fill"];
+        self.iconImageView.image = image;
     } else {
-        self.iconImageView.image = ZFPlayer_Image(@"ZFPlayer_brightness");
+        UIImage *image = [UIImage systemImageNamed:@"sun.min.fill"];
+        self.iconImageView.image = image;
     }
 }
 
@@ -147,6 +154,8 @@
 - (UIImageView *)iconImageView {
     if (!_iconImageView) {
         _iconImageView = [UIImageView new];
+        _iconImageView.contentMode = UIViewContentModeScaleAspectFit;
+        _iconImageView.tintColor = UIColor.whiteColor;
     }
     return _iconImageView;
 }
