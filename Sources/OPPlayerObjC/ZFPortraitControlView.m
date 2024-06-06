@@ -30,6 +30,7 @@
 #else
 #import "ZFPlayerConst.h"
 #endif
+#import "UIFont+Extensions.h"
 
 @interface ZFPortraitControlView () <ZFSliderViewDelegate>
 /// 底部工具栏
@@ -370,7 +371,7 @@
     if (!_totalTimeLabel) {
         _totalTimeLabel = [[UILabel alloc] init];
         _totalTimeLabel.textColor = [UIColor whiteColor];
-        _totalTimeLabel.font = [UIFont systemFontOfSize:14.0f];
+        _totalTimeLabel.font = [UIFont roundedFontWithSize:15.0f weight:UIFontWeightSemibold];
         _totalTimeLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _totalTimeLabel;
@@ -380,7 +381,7 @@
     if (!_fullScreenBtn) {
         _fullScreenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         UIImageSymbolConfiguration *config = [UIImageSymbolConfiguration configurationWithPointSize:24 weight:UIImageSymbolWeightRegular];
-        UIImage *normalImage = [UIImage systemImageNamed:@"arrow.up.backward.and.arrow.down.forward.square" withConfiguration:config];
+        UIImage *normalImage = [UIImage systemImageNamed:@"arrow.down.left.and.arrow.up.right"];
         [_fullScreenBtn setImage:normalImage forState:UIControlStateNormal];
         [_fullScreenBtn setTintColor:UIColor.whiteColor];
     }
@@ -388,3 +389,4 @@
 }
 
 @end
+
