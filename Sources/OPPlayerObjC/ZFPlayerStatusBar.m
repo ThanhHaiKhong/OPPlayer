@@ -323,6 +323,7 @@
         _batteryImageView = [[UIImageView alloc] init];
         _batteryImageView.bounds = CGRectMake(0, 0, 8, 12);
         _batteryImageView.center = CGPointMake(10, 5);
+        _batteryImageView.contentMode = UIViewContentModeScaleAspectFit;
         UIImage *image = [UIImage systemImageNamed:@"bolt.fill"];
         _batteryImageView.image = image;
     }
