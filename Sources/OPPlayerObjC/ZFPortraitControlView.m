@@ -380,8 +380,9 @@
     if (!_fullScreenBtn) {
         _fullScreenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         UIImageSymbolConfiguration *config = [UIImageSymbolConfiguration configurationWithPointSize:24 weight:UIImageSymbolWeightRegular];
-        UIImage *normalImage = [UIImage systemImageNamed:@"arrow.up.left.and.arrow.down.right" withConfiguration:config];
+        UIImage *normalImage = [UIImage systemImageNamed:@"arrow.up.backward.and.arrow.down.forward.square" withConfiguration:config];
         [_fullScreenBtn setImage:normalImage forState:UIControlStateNormal];
+        [_fullScreenBtn setTintColor:UIColor.whiteColor];
     }
     return _fullScreenBtn;
 }
