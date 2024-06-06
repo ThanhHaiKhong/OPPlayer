@@ -379,7 +379,9 @@
 - (UIButton *)fullScreenBtn {
     if (!_fullScreenBtn) {
         _fullScreenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_fullScreenBtn setImage:ZFPlayer_Image(@"ZFPlayer_fullscreen") forState:UIControlStateNormal];
+        UIImageSymbolConfiguration *config = [UIImageSymbolConfiguration configurationWithPointSize:24 weight:UIImageSymbolWeightRegular];
+        UIImage *normalImage = [UIImage systemImageNamed:@"arrow.up.left.and.arrow.down.right" withConfiguration:config];
+        [_fullScreenBtn setImage:normalImage forState:UIControlStateNormal];
     }
     return _fullScreenBtn;
 }
