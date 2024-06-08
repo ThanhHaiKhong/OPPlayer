@@ -141,7 +141,7 @@
     
     min_x = 0;
     min_y = 0;
-    min_w = 44;
+    min_w = 50;
     min_h = min_w;
     self.playOrPauseBtn.frame = CGRectMake(min_x, min_y, min_w, min_h);
     self.playOrPauseBtn.center = self.center;
@@ -168,8 +168,8 @@
     
     min_x = safeAreaInsets.left;
     min_y = 0;
-    min_w = 40;
-    min_h = 40;
+    min_w = 44;
+    min_h = 44;
     self.lockBtn.frame = CGRectMake(min_x, min_y, min_w, min_h);
     self.lockBtn.zf_centerY = self.zf_centerY;
     
@@ -186,7 +186,7 @@
     } else {
         self.topToolView.zf_y = -self.topToolView.zf_height;
         self.bottomToolView.zf_y = self.zf_height;
-        self.lockBtn.zf_left = -safeAreaInsets.left - 40;
+        self.lockBtn.zf_left = -safeAreaInsets.left - 44;
     }
 }
 
@@ -324,7 +324,7 @@
     self.isShow = NO;
     self.topToolView.zf_y = -self.topToolView.zf_height;
     self.bottomToolView.zf_y = self.zf_height;
-    self.lockBtn.zf_left = -self.safeAreaInsets.left -40;
+    self.lockBtn.zf_left = -self.safeAreaInsets.left - 44;
     self.player.statusBarHidden = YES;
     self.topToolView.alpha = 0;
     self.bottomToolView.alpha = 0;
@@ -444,7 +444,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.textColor = [UIColor whiteColor];
-        _titleLabel.font = [UIFont roundedFontWithSize:15.0f weight:UIFontWeightMedium];
+        _titleLabel.font = [UIFont roundedFontWithSize:16.0f weight:UIFontWeightMedium];
     }
     return _titleLabel;
 }
@@ -477,7 +477,7 @@
     if (!_currentTimeLabel) {
         _currentTimeLabel = [[UILabel alloc] init];
         _currentTimeLabel.textColor = [UIColor whiteColor];
-        _currentTimeLabel.font = [UIFont roundedFontWithSize:12.0f weight:UIFontWeightMedium];
+        _currentTimeLabel.font = [UIFont roundedFontWithSize:14.0f weight:UIFontWeightMedium];
         _currentTimeLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _currentTimeLabel;
@@ -500,7 +500,7 @@
     if (!_totalTimeLabel) {
         _totalTimeLabel = [[UILabel alloc] init];
         _totalTimeLabel.textColor = [UIColor whiteColor];
-        _totalTimeLabel.font = [UIFont roundedFontWithSize:12.0f weight:UIFontWeightMedium];
+        _totalTimeLabel.font = [UIFont roundedFontWithSize:14.0f weight:UIFontWeightMedium];
         _totalTimeLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _totalTimeLabel;
