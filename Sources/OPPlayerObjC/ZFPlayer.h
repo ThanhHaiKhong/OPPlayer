@@ -38,3 +38,4 @@ FOUNDATION_EXPORT const unsigned char ZFPlayerVersionString[];
 #import "ZFPlayerConst.h"
 #import "ZFPlayerControlView.h"
 #import "ZFAVPlayerManager.h"
+#import "ZFLandscapeRotationManager.h"
