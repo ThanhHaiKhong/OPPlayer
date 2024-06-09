@@ -34,7 +34,7 @@ struct AirPlayView: UIViewRepresentable {
     
     func makeCoordinator() -> Coordinator {
         Coordinator(parent: self) { routePickerView in
-            self.isConnected = self.checkAirPlayConnection()
+            
         }
     }
     

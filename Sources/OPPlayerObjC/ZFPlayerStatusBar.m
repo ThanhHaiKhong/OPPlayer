@@ -221,7 +221,7 @@
     CGFloat batteryLevel = [UIDevice currentDevice].batteryLevel;
     /// -1是模拟器
     if (batteryLevel < 0) { batteryLevel = 1.0; }
-    CGRect rect = CGRectMake(1.5, 1.5, (20-3)*batteryLevel, 10-3);
+    CGRect rect = CGRectMake(1.5, 1.5, (20 - 3) * batteryLevel, 10 - 3);
     UIBezierPath *batteryPath = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:2];
     
     UIColor *batteryColor;
@@ -267,7 +267,7 @@
             net = @"WIFI";
             break;
         case ZFReachabilityStatusNotReachable:
-            net = @"无网络";
+            net = @"No Internet";
             break;
         case ZFReachabilityStatusReachableVia2G:
             net = @"2G";
@@ -282,7 +282,7 @@
             net = @"5G";
             break;
         default:
-            net = @"未知";
+            net = @"Unknown";
             break;
     }
     return net;
@@ -326,6 +326,7 @@
         _batteryImageView.contentMode = UIViewContentModeScaleAspectFit;
         UIImage *image = [UIImage systemImageNamed:@"bolt.fill"];
         _batteryImageView.image = image;
+        _batteryImageView.tintColor = UIColor.systemGreenColor;
     }
     return _batteryImageView;
 }
